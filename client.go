@@ -19,7 +19,7 @@ type Client struct {
 	UDPTimeout    int
 	// HijackServerUDPAddr can let client control which server UDP address to connect to after sending request,
 	// In most cases, you should ignore this, according to the standard server will return the address in reply,
-	// More: https://github.com/txthinking/socks5/pull/8.
+	// More: https://github.com/foxever/socks5/pull/8.
 	HijackServerUDPAddr func(*Reply) (*net.UDPAddr, error)
 }
 

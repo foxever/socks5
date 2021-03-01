@@ -7,7 +7,7 @@ import (
 	"net"
 	"net/http"
 
-	"github.com/txthinking/socks5"
+	"github.com/foxever/socks5"
 )
 
 func ExampleServer() {

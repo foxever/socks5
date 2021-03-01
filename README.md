@@ -2,8 +2,8 @@
 
 [中文](README_ZH.md)
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/txthinking/socks5)](https://goreportcard.com/report/github.com/txthinking/socks5)
-[![GoDoc](https://godoc.org/github.com/txthinking/socks5?status.svg)](https://godoc.org/github.com/txthinking/socks5)
+[![Go Report Card](https://goreportcard.com/badge/github.com/foxever/socks5)](https://goreportcard.com/report/github.com/foxever/socks5)
+[![GoDoc](https://godoc.org/github.com/foxever/socks5?status.svg)](https://godoc.org/github.com/foxever/socks5)
 [![Donate](https://img.shields.io/badge/Support-Donate-ff69b4.svg)](https://www.txthinking.com/opensource-support.html)
 [![Slack](https://img.shields.io/badge/Join-Slack-ff69b4.svg)](https://docs.google.com/forms/d/e/1FAIpQLSdzMwPtDue3QoezXSKfhW88BXp57wkbDXnLaqokJqLeSWP9vQ/viewform)
 
@@ -14,7 +14,7 @@ Goals: KISS, less is more, small API, code is like the original protocol.
 
 ### Install
 ```
-$ go get github.com/txthinking/socks5
+$ go get github.com/foxever/socks5
 ```
 
 ### Struct is like concept in protocol

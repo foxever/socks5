@@ -2,8 +2,8 @@
 
 [English](README.md)
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/txthinking/socks5)](https://goreportcard.com/report/github.com/txthinking/socks5)
-[![GoDoc](https://godoc.org/github.com/txthinking/socks5?status.svg)](https://godoc.org/github.com/txthinking/socks5)
+[![Go Report Card](https://goreportcard.com/badge/github.com/foxever/socks5)](https://goreportcard.com/report/github.com/foxever/socks5)
+[![GoDoc](https://godoc.org/github.com/foxever/socks5?status.svg)](https://godoc.org/github.com/foxever/socks5)
 [![捐赠](https://img.shields.io/badge/%E6%94%AF%E6%8C%81-%E6%8D%90%E8%B5%A0-ff69b4.svg)](https://www.txthinking.com/opensource-support.html)
 [![交流群](https://img.shields.io/badge/%E7%94%B3%E8%AF%B7%E5%8A%A0%E5%85%A5-%E4%BA%A4%E6%B5%81%E7%BE%A4-ff69b4.svg)](https://docs.google.com/forms/d/e/1FAIpQLSdzMwPtDue3QoezXSKfhW88BXp57wkbDXnLaqokJqLeSWP9vQ/viewform)
 
@@ -14,7 +14,7 @@ SOCKS Protocol Version 5 Library.
 
 ### 获取
 ```
-$ go get github.com/txthinking/socks5
+$ go get github.com/foxever/socks5
 ```
 
 ### Struct的概念 对标 原始协议里的概念
