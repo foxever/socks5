@@ -17,6 +17,7 @@ type Client struct {
 	RemoteAddress net.Addr
 	TCPTimeout    int
 	UDPTimeout    int
+	ProxyBindAddr string
 	// HijackServerUDPAddr can let client control which server UDP address to connect to after sending request,
 	// In most cases, you should ignore this, according to the standard server will return the address in reply,
 	// More: https://github.com/foxever/socks5/pull/8.
@@ -40,15 +41,7 @@ func (c *Client) Dial(network, addr string) (net.Conn, error) {
 }
 
 func (c *Client) DialWithLocalAddr(network, src, dst string, remoteAddr net.Addr) (net.Conn, error) {
-	c = &Client{
-		Server:              c.Server,
-		UserName:            c.UserName,
-		Password:            c.Password,
-		TCPTimeout:          c.TCPTimeout,
-		UDPTimeout:          c.UDPTimeout,
-		RemoteAddress:       remoteAddr,
-		HijackServerUDPAddr: c.HijackServerUDPAddr,
-	}
+	c.RemoteAddress = remoteAddr
 	var err error
 	if network == "tcp" {
 		if c.RemoteAddress == nil {
@@ -283,5 +276,6 @@ func (c *Client) Request(r *Request) (*Reply, error) {
 	if rp.Rep != RepSuccess {
 		return nil, errors.New("Host unreachable")
 	}
+	c.ProxyBindAddr = rp.Address()
 	return rp, nil
 }
